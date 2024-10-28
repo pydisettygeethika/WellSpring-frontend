@@ -1,0 +1,99 @@
+/* Main login container styles */
+.login {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 100vh; /* Full height of the viewport */
+    background-color: #eef2f3; /* Light background color */
+    background: url('../Assets/back13.jpeg') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Box styles for the login form */
+.box {
+    background-color: #ffffff; /* White background for the box */
+    padding: 30px; /* Padding inside the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 400px; /* Maximum width for the box */
+    width: 100%; /* Full width on smaller devices */
+}
+
+/* Form heading styles */
+.form-container h1 {
+    text-align: center; /* Center the heading */
+    color: #98BF64; /* Darker text color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Styling for the input fields and their container */
+.input-box {
+    position: relative; /* Positioning for icons */
+    margin-bottom: 20px; /* Space between input fields */
+}
+
+.input-box input {
+    width: 100%; /* Full width for input */
+    padding: 10px 40px 10px 10px; /* Extra padding for icon space */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for input text */
+}
+
+/* Icon styles within the input fields */
+.input-box .icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+/* Remember me and forgot password link styles */
+.remember-forgot {
+    display: flex; /* Flex display for alignment */
+    justify-content: space-between; /* Space between items */
+    margin-bottom: 20px; /* Space below this section */
+}
+
+/* Button styles */
+button {
+    width: 100%; /* Full width for the button */
+    padding: 12px; /* Padding inside the button */
+    background-color: #98BF64 ;/* Primary color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #98BF64; /* Darker shade on hover */
+}
+
+/* Register link styles */
+.register-link {
+    text-align: center; /* Center the register link */
+    margin-top: 15px; /* Space above the link */
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    /* Styles for mobile devices */
+    .box {
+        padding: 20px; /* Adjust padding */
+        max-width: 90%; /* More responsive on small screens */
+    }
+
+    .input-box input {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    button {
+        font-size: 14px; /* Smaller font size for button */
+    }
+}

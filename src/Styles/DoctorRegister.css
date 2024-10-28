@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+.reg1 {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       min-height: 100vh;
+       background: url('../Assets/back13.jpeg') no-repeat center center;
+       background-size: cover;
+       background-position: center;
+       position: relative;
+       background-color: rgb(255, 255, 255);
+       border: 1px solid #d4c7c7;
+}
+
+/* Box styles for the registration form */
+.box2 {
+    background-color: #ffffff; /* White background for the form */
+    padding: 20px; /* Padding inside the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 400px; /* Maximum width for the form */
+    width: 100%; /* Full width on smaller devices */
+}
+
+/* Form heading styles */
+.box2 h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Error message styling */
+.box2 p {
+    color: red; /* Color for error messages */
+    text-align: center; /* Center the error message */
+}
+
+/* Input field styles */
+.box2 input {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Padding inside input fields */
+    margin-bottom: 15px; /* Space between input fields */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners for input fields */
+    font-size: 16px; /* Font size for text */
+}
+
+/* Button styles */
+.box2 button {
+    width: 100%; /* Full width for the button */
+    padding: 10px; /* Padding inside the button */
+    background-color: #98BF64; /* Primary color */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Button hover effect */
+.box2 button:hover {
+    background-color: #98BF64; /* Darker shade on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* Styles for tablets and smaller devices */
+    .box2 {
+        padding: 15px; /* Adjust padding */
+    }
+
+    input {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    button {
+        font-size: 14px; /* Smaller font size for button */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Styles for mobile devices */
+    .box2 {
+        padding: 10px; /* Further reduce padding */
+        max-width: 90%; /* Make the box more responsive */
+    }
+
+    input {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+
+    button {
+        font-size: 12px; /* Smaller font size for button */
+    }
+}

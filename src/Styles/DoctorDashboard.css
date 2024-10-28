@@ -1,0 +1,112 @@
+/* DoctorDashboard.css */
+
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container for the dashboard */
+.doctor-dashboard {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+
+
+/* Hero section styling */
+.hero-section {
+    margin-top: 20px;
+}
+
+/* Table styling */
+.appointment-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table header styling */
+.appointment-table thead {
+    background-color: #98BF64;
+    color: white;
+}
+
+.appointment-table th, 
+.appointment-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Highlight assigned appointments */
+.appointment-table .assigned {
+    background-color: #e0f7fa; 
+}
+
+/* Button styling */
+button {
+    padding: 10px 15px;
+    background-color: #98BF64;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Change button color on hover */
+button:hover {
+    background-color: #778a5f;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .appointment-table {
+        font-size: 14px;
+    }
+
+    .appointment-table th, 
+    .appointment-table td {
+        padding: 8px; 
+    }
+
+    button {
+        width: 100%; 
+        padding: 12px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .appointment-table {
+        display: block; 
+        overflow-x: auto; 
+    }
+
+    .appointment-table thead {
+        display: none; 
+    }
+
+    .appointment-table tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: #fff;
+    }
+
+    .appointment-table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+        border: none; 
+    }
+
+    .appointment-table td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: 10px;
+    }
+}
